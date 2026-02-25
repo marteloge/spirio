@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #1a3a2a;
+  --color-forest-light: #2d5a40;
+  --color-sage: #7a9e7e;
+  --color-sage-light: #a8c5ab;
+  --color-cream: #faf7f2;
+  --color-cream-dark: #f0ebe0;
+  --color-bark: #8b6f47;
+  --color-moss: #4a7c59;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-forest);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Zone badge colours */
+.zone-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #e8f4ea;
+  color: var(--color-forest);
+  border: 1px solid #c4ddc8;
+}
+
+/* Search focus ring */
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(122, 158, 126, 0.4);
+}
